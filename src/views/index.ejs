@@ -1,0 +1,24 @@
+<%- include("layouts/main.ejs") %>
+
+<section id="container">
+    <h1>Bienvenido <%=user %></h1>
+    <button type="button" id="btn-logout">Logout</button>
+    <h2>Centro de mensajes</h2>
+    <div class="container-chat" >
+        <input placeholder="Email" type="email" id="email" required>
+        <input placeholder="Nombre" type="email" id="name" required>
+        <input placeholder="Apellido" type="email" id="lastName" required>
+        <input placeholder="Edad" type="email" id="age" required>
+        <input placeholder="Alias" type="email" id="alias" required>
+        <input placeholder="Avatar" type="email" id="avatar" required>
+        <div id="chat"></div>
+        <div>
+            <input placeholder="Ingresa un mensaje..." type="text" id="message" required>
+            <button type="button" id="btn-chat" class="btn">Enviar</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./../static/app/index.js" type="module"></script>

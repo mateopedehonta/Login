@@ -1,0 +1,12 @@
+
+<form class="formulario" action="/register" method="POST">
+    <h1>Register</h1>
+    <label>Nombre de usuario: <input type="text" name="username" /></label>
+    <label>Contraseña: <input type="password" name="password" /></label>
+    <label>Email: <input type="email" name="email" /></label>
+    <p class="alert"><%=alert %></p>
+    <input type="submit" value="Entrar" />
+  </form>
+<a href="/login">Login</a>
+
+<%- include("layouts/main.ejs") %>

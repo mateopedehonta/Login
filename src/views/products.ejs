@@ -1,0 +1,14 @@
+<%- include("layouts/main.ejs") %>
+
+<h1>Productos</h1>
+<div class="container">
+  <% productos.forEach(function(producto){ %>
+  <div class="box">
+    <h2><%=producto.name %></h2>
+    <p>Precio:<%=producto.price %></p>
+    <img src="<%" ="producto.foto" % /> alt="">
+  </div>
+  <% })%>
+</div>
+
+<a href="/">Agregar productos</a>

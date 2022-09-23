@@ -1,0 +1,11 @@
+<%- include("layouts/main.ejs") %>
+
+<form class="formulario" action="/productos" method="POST">
+  <h1>Agregar un producto</h1>
+  <label>Titulo: <input type="text" name="title" /></label>
+  <label>Precio: <input type="number" name="price" /></label>
+  <label>Url: <input type="text" name="url" /></label>
+  <input type="submit" value="subir" />
+</form>
+
+<a href="/productos">Ver los productos</a>
